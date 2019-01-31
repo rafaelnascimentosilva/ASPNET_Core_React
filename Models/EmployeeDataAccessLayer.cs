@@ -25,7 +25,7 @@ namespace ReactCrudDemo.Models
         {
             try
             {
-                db.Entry(employee).State = EntityState.Modified;
+                db.TblEmployee.Add(employee);
                 db.SaveChanges();
                 return 1;
             }
